@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-basicos',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class BasicosComponent {
 
+  // @ViewChild('miFormulario') miFormulario!: NgForm
+
+
+
+  guardar(miFormulario: NgForm) {
+    // console.log(miFormulario);
+    console.log('Correcto');
+    miFormulario.resetForm();
+  }
 }
