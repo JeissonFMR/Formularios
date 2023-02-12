@@ -8,10 +8,6 @@ import { NgForm } from '@angular/forms';
 })
 export class BasicosComponent {
 
-  // @ViewChild('miFormulario') miFormulario!: NgForm
-
-
-
   guardar(miFormulario: NgForm) {
     // console.log(miFormulario);
     console.log('Correcto');
